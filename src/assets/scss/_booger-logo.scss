@@ -1,0 +1,20 @@
+.booger-logo {
+  max-height: 200px;
+
+  @media (min-width: 768px) {
+    max-height: unset;
+  }
+
+  &__brown{
+    fill: $brown;
+  }
+
+  &__white {
+    fill: #fff;
+  }
+
+  &__red {
+    fill: $red;
+  }
+}
+

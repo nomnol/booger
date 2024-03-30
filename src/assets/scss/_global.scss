@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Mulish-Bold';
+  src: url('../fonts/Mulish-Bold.woff2') format('woff2'),
+       url('../fonts/Mulish-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mulish-Medium';
+  src: url('../fonts/Mulish-Medium.woff2') format('woff2'),
+       url('../fonts/Mulish-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mulish-ExtraBold';
+  src: url('../fonts/Mulish-ExtraBold.woff2') format('woff2'),
+       url('../fonts/Mulish-ExtraBold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Bold';
+  src: url('../fonts/Rubik-Bold.woff2') format('woff2'),
+  url('../fonts/Rubik-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-ExtraBold';
+  src: url('../fonts/Rubik-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Rubik-ExtraBold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Medium';
+  src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
+  url('../fonts/Rubik-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+main,
+.render-box {
+  height: 100%;
+}
+
+body {
+  color: #000;
+  font-size: 16px;
+  font-family: $f-mulish-bold;
+  font-family: $f-mulish-extra-bold;
+  font-family: $f-mulish-med;
+  font-family: $f-rubik-bold;
+  font-family: $f-rubik-extra-bold;
+  font-family: $f-rubik-med;
+}

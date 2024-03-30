@@ -1,0 +1,85 @@
+.booger {
+  &-wrap {
+    height: 100%;
+    display: grid;
+    padding: 10px;
+
+    @media (min-width: 768px) {
+      padding: 20px;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-rows: 200px auto;
+    text-align: center;
+    justify-items: center;
+
+    @media (min-width: 768px) {
+      text-align: unset;
+      min-width: 90%;
+      max-width: 90%;
+      margin: 0 auto;
+      grid-template-rows: unset;
+      grid-template-columns: 48% 52%;
+      align-items: center;
+      grid-column-gap: 20px;
+    }
+  }
+
+  &__header {
+    font-size: 24px;
+  }
+
+  &__blockquote {
+    font-family: $f-mulish-med;
+    color: $brown;
+    font-size: 38px;
+    text-shadow: 2px 2px 0 #000;
+
+    @media (min-width: 1024px) {
+      font-size: 48px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 58px;
+      line-height: 58px;
+    }
+  }
+
+  &__name {
+    font-family: $f-rubik-bold;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 6px 6px 0 $red;
+    text-transform: uppercase;
+
+    @media (min-width: 1024px) {
+      font-size: 50px;
+      font-family: $f-rubik-extra-bold;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 60px;
+    }
+  }
+
+  &__booger {
+    font-family: $f-rubik-bold;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 6px 6px 0 #000;
+    text-transform: uppercase;
+
+    @media (min-width: 1024px) {
+      font-size: 50px;
+      font-family: $f-rubik-extra-bold;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 60px;
+    }
+  }
+}
