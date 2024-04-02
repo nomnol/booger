@@ -25,7 +25,7 @@
       grid-template-rows: unset;
       grid-template-columns: 48% 52%;
       align-items: center;
-      grid-column-gap: 20px;
+      grid-column-gap: 30px;
     }
   }
 
@@ -36,16 +36,16 @@
   &__blockquote {
     font-family: $f-mulish-med;
     color: $brown;
-    font-size: 38px;
+    font-size: 28px;
     text-shadow: 2px 2px 0 #000;
 
     @media (min-width: 1024px) {
-      font-size: 48px;
+      font-size: 38px;
     }
 
     @media (min-width: 1440px) {
-      font-size: 58px;
-      line-height: 58px;
+      font-size: 48px;
+      line-height: 50px;
     }
   }
 
@@ -81,5 +81,81 @@
     @media (min-width: 1440px) {
       font-size: 60px;
     }
+  }
+
+  &__algorand {
+    text-shadow: none;
+    color: #000;
+    font-family: $f-rubik-med;
+    font-style: normal;
+    font-size: 24px;
+    white-space: nowrap;
+    text-transform: lowercase;
+
+    @media (min-width: 768px) {
+      font-size: 34px;
+    }
+  }
+
+  &__data-header {
+
+  }
+
+  &__data-box-item {
+    display: grid;
+    align-items: baseline;
+    grid-column-gap: 10px;
+    grid-auto-flow: column;
+    grid-template-columns: 130px 1fr;
+    justify-items: left;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 200px 1fr;
+      font-size: 34px;
+    }
+  }
+
+  &__data-header {
+    font-size: 22px;
+
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
+  }
+
+  &__data-value {
+    color: #000;
+    font-size: 22px;
+    font-family: $f-rubik-bold;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  &__aside {
+    display: grid;
+    grid-row-gap: 20px;
+
+    @media (min-width: 768px) {
+      justify-self: left;
+    }
+  }
+
+  &__data-header_tg {
+    display: inline-grid;
+    align-items: center;
+    grid-gap: 5px;
+    grid-auto-flow: column;
+  }
+
+  &__tg-link {
+    color: $tg;
+    font-size: 24px;
+    transition: color .1s;
+  }
+
+  &__tg-link:hover {
+    color: $red;
   }
 }

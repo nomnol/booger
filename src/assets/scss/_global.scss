@@ -45,6 +45,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-style: normal;
 }
 
 html,
@@ -63,4 +64,13 @@ body {
   font-family: $f-rubik-bold;
   font-family: $f-rubik-extra-bold;
   font-family: $f-rubik-med;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
 }
