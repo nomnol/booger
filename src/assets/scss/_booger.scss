@@ -14,10 +14,13 @@
   &__container {
     display: grid;
     grid-template-rows: 200px auto;
+    grid-row-gap: 10px;
     text-align: center;
     justify-items: center;
+    align-content: center;
 
     @media (min-width: 768px) {
+      grid-row-gap: unset;
       text-align: unset;
       min-width: 90%;
       max-width: 90%;
@@ -25,6 +28,7 @@
       grid-template-rows: unset;
       grid-template-columns: 48% 52%;
       align-items: center;
+      align-content: unset;
       grid-column-gap: 30px;
     }
   }
@@ -38,12 +42,11 @@
     color: $brown;
     font-size: 28px;
     text-shadow: 2px 2px 0 #000;
-
-    @media (min-width: 1024px) {
-      font-size: 38px;
-    }
+    text-align: left;
+    text-wrap: balance;
 
     @media (min-width: 1440px) {
+      text-align: unset;
       font-size: 48px;
       line-height: 50px;
     }
@@ -53,10 +56,12 @@
     font-family: $f-rubik-bold;
     font-size: 40px;
     color: #fff;
-    text-shadow: 6px 6px 0 $red;
+    text-shadow: 5px 5px 0 $red;
     text-transform: uppercase;
+    -webkit-text-stroke: 1px $red;
 
     @media (min-width: 1024px) {
+      text-shadow: 6px 6px 0 $red;
       font-size: 50px;
       font-family: $f-rubik-extra-bold;
     }
@@ -70,11 +75,13 @@
     font-family: $f-rubik-bold;
     font-size: 40px;
     color: #fff;
-    text-shadow: 6px 6px 0 #000;
+    text-shadow: 5px 5px 0 #000;
     text-transform: uppercase;
+    -webkit-text-stroke: 1px #000;
 
     @media (min-width: 1024px) {
       font-size: 50px;
+      text-shadow: 6px 6px 0 #000;
       font-family: $f-rubik-extra-bold;
     }
 
@@ -88,7 +95,7 @@
     color: #000;
     font-family: $f-rubik-med;
     font-style: normal;
-    font-size: 24px;
+    font-size: 22px;
     white-space: nowrap;
     text-transform: lowercase;
 
@@ -106,20 +113,20 @@
     align-items: baseline;
     grid-column-gap: 10px;
     grid-auto-flow: column;
-    grid-template-columns: 130px 1fr;
+    grid-template-columns: 120px 1fr;
     justify-items: left;
 
     @media (min-width: 768px) {
-      grid-template-columns: 200px 1fr;
+      grid-template-columns: 150px 1fr;
       font-size: 34px;
     }
   }
 
   &__data-header {
-    font-size: 22px;
+    font-size: 20px;
 
     @media (min-width: 768px) {
-      font-size: 28px;
+      font-size: 24px;
     }
   }
 
@@ -129,6 +136,10 @@
     font-family: $f-rubik-bold;
 
     @media (min-width: 768px) {
+      font-size: 26px;
+    }
+
+    @media (min-width: 1440px) {
       font-size: 30px;
     }
   }
@@ -136,8 +147,14 @@
   &__aside {
     display: grid;
     grid-row-gap: 20px;
+    min-width: 100%;
+    justify-items: left;
+    align-content: start;
 
     @media (min-width: 768px) {
+      align-content: unset;
+      justify-items: unset;
+      min-width: unset;
       justify-self: left;
     }
   }
@@ -145,7 +162,6 @@
   &__data-header_tg {
     display: inline-grid;
     align-items: center;
-    grid-gap: 5px;
     grid-auto-flow: column;
   }
 

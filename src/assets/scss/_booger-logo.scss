@@ -5,7 +5,11 @@
     max-height: unset;
   }
 
-  &__brown{
+  &__black {
+    fill: #000;
+  }
+
+  &__brown {
     fill: $brown;
   }
 
