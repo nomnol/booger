@@ -4,9 +4,16 @@
 </style>
 
 <script setup>
+
 import BoogerLogo from './components/BoogerLogo.vue';
 
-const onCopyClick = (address) => {
+const CA = 'NH23I7ZEG6TX65KOKGZ22FKBRRP34WXC3HQ4Q6PSLSPYGXNA5RB2TPRFXA';
+
+const onCopyClick = async (address) => {
+  const clipboard = navigator.clipboard;
+  if (clipboard) {
+    await clipboard.writeText(address);
+  }
 }
 
 </script>
@@ -46,17 +53,27 @@ const onCopyClick = (address) => {
           </li>
           <li class="booger__data-box-item">
             <dfn class="booger__data-header">Address:</dfn>
-            <ins class="booger__data-value">…
+            <ins class="booger__data-value booger__data-value_ca">
+              <span class="booger__ca">{{CA}}</span>
               <svg
-                @click="onCopyClick('asdf!@#$')"
-                fill="#000000"
+                @click="onCopyClick(CA)"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" id="copy" class="icon glyph">
+                class="booger__copy-link"
+              >
                 <path d="M20,6V17a1,1,0,0,1-1,1H9a1,1,0,0,1-1-1V3A1,1,0,0,1,9,2h7a1.05,1.05,0,0,1,.71.29l3,3A1,1,0,0,1,20,6ZM17,21a1,1,0,0,0-1-1H6V6A1,1,0,0,0,4,6V20a2,2,0,0,0,2,2H16A1,1,0,0,0,17,21Z"></path>
               </svg>
             </ins>
+          </li>
+          <li class="booger__data-box-item">
+            <dfn class="booger__data-header booger__data-header_tg">ASA details :</dfn>
+            <a
+              href="https://explorer.perawallet.app/asset/1720973423/"
+              target="_blank"
+              class="booger__pera-link"
+              title="view on explorer"
+            ></a>
           </li>
           <li class="booger__data-box-item">
             <dfn class="booger__data-header booger__data-header_tg">
