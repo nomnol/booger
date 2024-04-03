@@ -150,12 +150,11 @@
   }
 
   &__tg-link {
-    color: $tg;
     font-size: 24px;
     transition: color .1s;
   }
 
   &__tg-link:hover {
-    color: $red;
+    color: $tg;
   }
 }
