@@ -39,8 +39,8 @@ const onCopyClick = async (address) => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M32 32H27.0095L23.7387 19.9201L16.725 32H11.1275L21.9515 13.2913L20.1981 6.76341L5.59747 32H0L18.5121 0H23.4352L25.5595 7.97476H30.6175L27.1781 13.9642L32 32Z" fill="var(--text-main)"></path>
-              </svg>
-              lgorand</em>.
+              </svg>lgorand
+            </em>.
           </p>
         </blockquote>
         <ul class="booger__data-box">
@@ -68,12 +68,12 @@ const onCopyClick = async (address) => {
             </ins>
           </li>
           <li class="booger__data-box-item">
-            <dfn class="booger__data-header booger__data-header_tg">ASA details :</dfn>
+            <dfn class="booger__data-header booger__data-header_tg">Details :</dfn>
             <a
               href="https://explorer.perawallet.app/asset/1720973423/"
               target="_blank"
               class="booger__pera-link"
-              title="view on explorer"
+              title="view details on explorer"
             ></a>
           </li>
           <li class="booger__data-box-item">
