@@ -38,17 +38,23 @@
   }
 
   &__blockquote {
-    font-family: $f-mulish-med;
-    color: $brown;
-    font-size: 28px;
-    text-shadow: 2px 2px 0 #000;
     text-align: left;
     text-wrap: balance;
 
     @media (min-width: 1440px) {
       text-align: unset;
+    }
+  }
+
+  &__par {
+    font-family: $f-mulish-med;
+    color: $brown;
+    font-size: 28px;
+    text-shadow: 2px 2px 0 #000;
+
+    @media (min-width: 1440px) {
+      text-align: unset;
       font-size: 48px;
-      line-height: 50px;
     }
   }
 
@@ -104,8 +110,9 @@
     }
   }
 
-  &__data-header {
-
+  &__data-box {
+    display: grid;
+    grid-row-gap: 5px;
   }
 
   &__data-box-item {
@@ -123,6 +130,7 @@
   }
 
   &__data-header {
+    white-space: nowrap;
     font-size: 20px;
 
     @media (min-width: 768px) {
@@ -154,7 +162,7 @@
 
   &__aside {
     display: grid;
-    grid-row-gap: 20px;
+    grid-row-gap: 40px;
     min-width: 100%;
     justify-items: left;
     align-content: start;

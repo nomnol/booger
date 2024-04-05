@@ -24,23 +24,24 @@ const onCopyClick = async (address) => {
       <BoogerLogo />
       <aside class="booger__aside">
         <blockquote class="booger__blockquote">
-          Hello, hello!
-          Nice to meet.
-          My name is <b class="booger__name">DruD</b>.
-          And I am a <b class="booger__booger">Booger</b>,
-          simple meme coin,
-          created on
-          <em class="booger__algorand">
-            <svg
-              class="algorand-logo"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="#000"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M32 32H27.0095L23.7387 19.9201L16.725 32H11.1275L21.9515 13.2913L20.1981 6.76341L5.59747 32H0L18.5121 0H23.4352L25.5595 7.97476H30.6175L27.1781 13.9642L32 32Z" fill="var(--text-main)"></path>
-            </svg>lgorand</em>.
+          <p class="booger__par">Hello, hello!</p>
+          <p class="booger__par">Nice to meet.</p>
+          <p class="booger__par">My name is <b class="booger__name">DruD</b>.</p>
+          <p class="booger__par">And I am a <b class="booger__booger">Booger</b>.</p>
+          <p class="booger__par">Simple meme coin, created on
+            <em class="booger__algorand">
+              <svg
+                class="algorand-logo"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="#000"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M32 32H27.0095L23.7387 19.9201L16.725 32H11.1275L21.9515 13.2913L20.1981 6.76341L5.59747 32H0L18.5121 0H23.4352L25.5595 7.97476H30.6175L27.1781 13.9642L32 32Z" fill="var(--text-main)"></path>
+              </svg>
+              lgorand</em>.
+          </p>
         </blockquote>
         <ul class="booger__data-box">
           <li class="booger__data-box-item">
@@ -48,7 +49,7 @@ const onCopyClick = async (address) => {
             <ins class="booger__data-value">DRUD</ins>
           </li>
           <li class="booger__data-box-item">
-            <dfn class="booger__data-header">Max supply:</dfn>
+            <dfn class="booger__data-header">Total supply:</dfn>
             <ins class="booger__data-value">10 000 000 000</ins>
           </li>
           <li class="booger__data-box-item">
