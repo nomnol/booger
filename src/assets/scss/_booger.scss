@@ -2,7 +2,6 @@
   &-wrap {
     height: 100%;
     display: grid;
-    padding: 10px;
 
     @media (min-width: 768px) {
       padding: 20px;
@@ -12,24 +11,29 @@
   }
 
   &__container {
-    display: grid;
-    grid-template-rows: 200px auto;
-    grid-row-gap: 10px;
-    text-align: center;
-    justify-items: center;
-    align-content: center;
-
     @media (min-width: 768px) {
-      grid-row-gap: unset;
-      text-align: unset;
+      display: grid;
       min-width: 90%;
       max-width: 90%;
       margin: 0 auto;
-      grid-template-rows: unset;
       grid-template-columns: 48% 52%;
       align-items: center;
-      align-content: unset;
       grid-column-gap: 30px;
+    }
+  }
+
+  &__logo-container {
+    padding-top: 10px;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    overflow: clip;
+
+    @media (min-width: 768px) {
+      padding: 0;
+      height: unset;
+      align-items: unset;
+      overflow: unset;
     }
   }
 
@@ -49,7 +53,7 @@
   &__par {
     font-family: $f-mulish-med;
     color: $brown;
-    font-size: 28px;
+    font-size: 40px;
     text-shadow: 2px 2px 0 #000;
 
     @media (min-width: 1440px) {
@@ -161,13 +165,22 @@
   }
 
   &__aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    padding: 20px;
     display: grid;
     grid-row-gap: 40px;
     min-width: 100%;
-    justify-items: left;
-    align-content: start;
+    align-content: center;
+    background-color: rgba(255, 255, 255, .8);
 
     @media (min-width: 768px) {
+      position: static;
+      padding: unset;
+      height: unset;
+      background-color: unset;
       align-content: unset;
       justify-items: unset;
       min-width: unset;

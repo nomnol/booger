@@ -21,7 +21,9 @@ const onCopyClick = async (address) => {
 <template>
   <section class="booger-wrap">
     <div class="booger__container">
-      <BoogerLogo />
+      <header class="booger__logo-container">
+        <BoogerLogo />
+      </header>
       <aside class="booger__aside">
         <blockquote class="booger__blockquote">
           <p class="booger__par">Hello, hello!</p>

@@ -1,8 +1,8 @@
 .booger-logo {
-  max-height: 200px;
+  width: 200%;
 
   @media (min-width: 768px) {
-    max-height: unset;
+    width: unset;
   }
 
   &__black {
