@@ -42,7 +42,7 @@ const onCopyClick = async (address) => {
           </li>
           <li class="booger__data-box-item">
             <dfn class="booger__data-header">Total supply:</dfn>
-            <ins class="booger__data-value">10 000 000 000</ins>
+            <ins class="booger__data-value">1 000 000 000</ins>
           </li>
           <li class="booger__data-box-item">
             <dfn class="booger__data-header">Address:</dfn>
@@ -62,7 +62,7 @@ const onCopyClick = async (address) => {
           <li class="booger__data-box-item">
             <dfn class="booger__data-header booger__data-header_tg">Details :</dfn>
             <a
-              href="https://explorer.perawallet.app/asset/1720973423/"
+              href="https://explorer.perawallet.app/asset/1730408100/"
               target="_blank"
               class="booger__pera-link"
               title="view details on explorer"
