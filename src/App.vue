@@ -5,7 +5,8 @@
 
 <script setup>
 
-import BoogerLogo from './components/BoogerLogo.vue';
+import BoogerLogo from '@/components/BoogerLogo.vue';
+import AlgorandLogo from '@/components/AlgorandLogo.vue';
 
 const CA = 'NH23I7ZEG6TX65KOKGZ22FKBRRP34WXC3HQ4Q6PSLSPYGXNA5RB2TPRFXA';
 
@@ -31,18 +32,7 @@ const onCopyClick = async (address) => {
           <p class="booger__par">My name is <b class="booger__name">DruD</b>.</p>
           <p class="booger__par">And I am a <b class="booger__booger">Booger</b>.</p>
           <p class="booger__par">Simple meme coin, created on
-            <em class="booger__algorand">
-              <svg
-                class="algorand-logo"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="#000"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M32 32H27.0095L23.7387 19.9201L16.725 32H11.1275L21.9515 13.2913L20.1981 6.76341L5.59747 32H0L18.5121 0H23.4352L25.5595 7.97476H30.6175L27.1781 13.9642L32 32Z" fill="var(--text-main)"></path>
-              </svg>lgorand
-            </em>.
+            <AlgorandLogo />
           </p>
         </blockquote>
         <ul class="booger__data-box">

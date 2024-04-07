@@ -100,20 +100,6 @@
     }
   }
 
-  &__algorand {
-    text-shadow: none;
-    color: #000;
-    font-family: $f-rubik-med;
-    font-style: normal;
-    font-size: 22px;
-    white-space: nowrap;
-    text-transform: lowercase;
-
-    @media (min-width: 768px) {
-      font-size: 34px;
-    }
-  }
-
   &__data-box {
     display: grid;
     grid-row-gap: 5px;
