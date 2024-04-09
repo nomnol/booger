@@ -11,6 +11,8 @@
   }
 
   &__container {
+    position: relative;
+
     @media (min-width: 768px) {
       display: grid;
       min-width: 90%;
@@ -159,15 +161,17 @@
     display: grid;
     grid-row-gap: 40px;
     min-width: 100%;
+    min-height: 100%;
     align-content: center;
-    //opacity: 1;
-    background-color: rgba(255, 255, 255, .8);
-    //animation: showData .5s ease-in-out;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .9);
+    animation: showData 1.5s ease-in-out;
 
     @media (min-width: 768px) {
       position: static;
       padding: unset;
       height: unset;
+      min-height: unset;
       background-color: unset;
       align-content: unset;
       justify-items: unset;
