@@ -55,7 +55,7 @@
   &__par {
     font-family: $f-mulish-med;
     color: $brown;
-    font-size: 40px;
+    font-size: 38px;
     text-shadow: 2px 2px 0 #000;
 
     @media (min-width: 1440px) {
@@ -85,7 +85,7 @@
 
   &__booger {
     font-family: $f-rubik-bold;
-    font-size: 40px;
+    font-size: 38px;
     color: #fff;
     text-shadow: 5px 5px 0 #000;
     text-transform: uppercase;
@@ -117,6 +117,7 @@
 
     @media (min-width: 768px) {
       grid-template-columns: 150px 1fr;
+      line-height: 45px;
       font-size: 34px;
     }
   }
@@ -215,10 +216,14 @@
     background-repeat: no-repeat;
   }
 
+  &__tiny-link {
+    display: inline-flex;
+  }
+
   &__ca {
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 16px;
+    font-size: 17px;
     font-family: $f-rubik-med;
     white-space: nowrap;
   }

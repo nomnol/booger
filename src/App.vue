@@ -7,6 +7,7 @@
 
 import BoogerLogo from '@/components/BoogerLogo.vue';
 import AlgorandLogo from '@/components/AlgorandLogo.vue';
+import TinymanLogo from './components/TinymanLogo.vue';
 
 const CA = 'NH23I7ZEG6TX65KOKGZ22FKBRRP34WXC3HQ4Q6PSLSPYGXNA5RB2TPRFXA';
 
@@ -41,7 +42,7 @@ const onCopyClick = async (address) => {
             <ins class="booger__data-value">DRUD</ins>
           </li>
           <li class="booger__data-box-item">
-            <dfn class="booger__data-header">Total supply:</dfn>
+            <dfn class="booger__data-header">Total:</dfn>
             <ins class="booger__data-value">1 000 000 000</ins>
           </li>
           <li class="booger__data-box-item">
@@ -60,7 +61,7 @@ const onCopyClick = async (address) => {
             </ins>
           </li>
           <li class="booger__data-box-item">
-            <dfn class="booger__data-header booger__data-header_tg">Details :</dfn>
+            <dfn class="booger__data-header booger__data-header_tg">Details:</dfn>
             <a
               href="https://explorer.perawallet.app/asset/1730408100/"
               target="_blank"
@@ -69,8 +70,19 @@ const onCopyClick = async (address) => {
             ></a>
           </li>
           <li class="booger__data-box-item">
+            <dfn class="booger__data-header">Pool:</dfn>
+            <a
+              href=""
+              target="_blank"
+              class="booger__tiny-link"
+              title="get me on tinyman"
+            >
+              <TinymanLogo />
+            </a>
+          </li>
+          <li class="booger__data-box-item">
             <dfn class="booger__data-header booger__data-header_tg">
-              Telegram
+              Tg
               <svg
                 fill="#000"
                 width="32px"
