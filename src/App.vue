@@ -72,7 +72,7 @@ const onCopyClick = async (address) => {
           <li class="booger__data-box-item">
             <dfn class="booger__data-header">Pool:</dfn>
             <a
-              href=""
+              href="https://app.tinyman.org/#/pool/275MS5QOBOD7GLR673MRCC6VINCGO4GKXBK5WR5TRJXN7JIE4U2A34STJU"
               target="_blank"
               class="booger__tiny-link"
               title="get me on tinyman"
