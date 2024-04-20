@@ -48,7 +48,7 @@ const onCopyClick = async (address) => {
           </li>
           <li class="booger__data-box-item booger__data-box-item_extra-column">
             <dfn class="booger__data-header">Burned:</dfn>
-            <small class="booger__data-value booger__data-value_burned">19m</small>
+            <small class="booger__data-value booger__data-value_burned">730m</small>
             <ins class="booger__data-value_ca-burned">
                 <span class="booger__ca booger__ca_burned">
                   {{CA_BURNED}}
