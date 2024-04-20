@@ -10,6 +10,7 @@ import AlgorandLogo from '@/components/AlgorandLogo.vue';
 import TinymanLogo from '@/components/TinymanLogo.vue';
 import HumbleLogo from '@/components/HumbleLogo.vue';
 import PactLogo from './components/PactLogo.vue';
+import AlloLogo from './components/AlloLogo.vue';
 
 const CA = 'NH23I7ZEG6TX65KOKGZ22FKBRRP34WXC3HQ4Q6PSLSPYGXNA5RB2TPRFXA';
 const CA_BURNED = 'BNFIREKGRXEHCFOEQLTX3PU5SUCMRKDU7WHNBGZA4SXPW42OAHZBP7BPHY';
@@ -81,7 +82,7 @@ const onCopyClick = async (address) => {
               </svg>
             </ins>
           </li>
-          <li class="booger__data-box-item">
+          <li class="booger__data-box-item booger__data-box-item_extra-column">
             <dfn class="booger__data-header booger__data-header_tg">Details:</dfn>
             <a
               href="https://explorer.perawallet.app/asset/1730408100/"
@@ -89,6 +90,14 @@ const onCopyClick = async (address) => {
               class="booger__pera-link"
               title="view details on explorer"
             ></a>
+            <a
+              href="https://allo.info/asset/1730408100/token"
+              target="_blank"
+              class="booger__allo-link"
+              title="view details on explorer"
+            >
+              <AlloLogo />
+            </a>
           </li>
           <li class="booger__data-box-item booger__data-box-item_pools">
             <dfn class="booger__data-header">Pools:</dfn>

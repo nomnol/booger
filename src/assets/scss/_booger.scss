@@ -127,7 +127,7 @@
   &__data-box-item_extra-column {
     grid-template-columns: 120px auto auto;
     justify-content: start;
-    align-items: baseline;
+    align-items: center;
 
     @media (min-width: 768px) {
       grid-template-columns: 150px auto auto;
@@ -264,6 +264,10 @@
 
   &__pact-link {
     align-self: center;
+  }
+
+  &__allo-link {
+    display: inline-flex;
   }
 
   &__ca {
