@@ -7,7 +7,9 @@
 
 import BoogerLogo from '@/components/BoogerLogo.vue';
 import AlgorandLogo from '@/components/AlgorandLogo.vue';
-import TinymanLogo from './components/TinymanLogo.vue';
+import TinymanLogo from '@/components/TinymanLogo.vue';
+import HumbleLogo from '@/components/HumbleLogo.vue';
+import PactLogo from './components/PactLogo.vue';
 
 const CA = 'NH23I7ZEG6TX65KOKGZ22FKBRRP34WXC3HQ4Q6PSLSPYGXNA5RB2TPRFXA';
 const CA_BURNED = 'BNFIREKGRXEHCFOEQLTX3PU5SUCMRKDU7WHNBGZA4SXPW42OAHZBP7BPHY';
@@ -88,8 +90,8 @@ const onCopyClick = async (address) => {
               title="view details on explorer"
             ></a>
           </li>
-          <li class="booger__data-box-item">
-            <dfn class="booger__data-header">Pool:</dfn>
+          <li class="booger__data-box-item booger__data-box-item_pools">
+            <dfn class="booger__data-header">Pools:</dfn>
             <a
               href="https://app.tinyman.org/#/pool/275MS5QOBOD7GLR673MRCC6VINCGO4GKXBK5WR5TRJXN7JIE4U2A34STJU"
               target="_blank"
@@ -97,6 +99,22 @@ const onCopyClick = async (address) => {
               title="get me on tinyman"
             >
               <TinymanLogo />
+            </a>
+            <a
+              href="https://app.humble.sh/pool/add/1763845960"
+              target="_blank"
+              class="booger__humble-link"
+              title="get me on humble"
+            >
+              <HumbleLogo />
+            </a>
+            <a
+              href="https://app.pact.fi/pools?page=1&search=1765939400#table"
+              target="_blank"
+              class="booger__pact-link"
+              title="get me on pact"
+            >
+              <PactLogo />
             </a>
           </li>
           <li class="booger__data-box-item">

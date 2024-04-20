@@ -116,7 +116,9 @@
     justify-items: left;
 
     @media (min-width: 768px) {
-      grid-template-columns: 150px 1fr;
+      grid-template-columns: 150px auto auto;
+      justify-content: start;
+      align-items: center;
       line-height: 45px;
       font-size: 34px;
     }
@@ -129,6 +131,15 @@
 
     @media (min-width: 768px) {
       grid-template-columns: 150px auto auto;
+    }
+  }
+
+  &__data-box-item_pools {
+    grid-template-columns: 120px auto auto auto;
+    justify-content: start;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 150px auto auto auto;
     }
   }
 
@@ -245,8 +256,14 @@
     background-repeat: no-repeat;
   }
 
-  &__tiny-link {
+  &__tiny-link,
+  &__humble-link {
     display: inline-flex;
+    margin-right: 5px;
+  }
+
+  &__pact-link {
+    align-self: center;
   }
 
   &__ca {
