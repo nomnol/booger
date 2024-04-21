@@ -51,21 +51,23 @@ const onCopyClick = async (address) => {
           </li>
           <li class="booger__data-box-item booger__data-box-item_extra-column">
             <dfn class="booger__data-header">Burned:</dfn>
-            <small class="booger__data-value booger__data-value_burned">850m</small>
-            <ins class="booger__data-value_ca-burned">
+            <aside class="booger__data-burned-wrap">
+              <small class="booger__data-value booger__data-value_burned">850m</small>
+              <ins class="booger__data-value_ca-burned">
                 <span class="booger__ca booger__ca_burned">
                   {{CA_BURNED}}
                 </span>
-              <svg
-                @click="onCopyClick(CA_BURNED)"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="booger__copy-link"
-              >
-                <path d="M20,6V17a1,1,0,0,1-1,1H9a1,1,0,0,1-1-1V3A1,1,0,0,1,9,2h7a1.05,1.05,0,0,1,.71.29l3,3A1,1,0,0,1,20,6ZM17,21a1,1,0,0,0-1-1H6V6A1,1,0,0,0,4,6V20a2,2,0,0,0,2,2H16A1,1,0,0,0,17,21Z"></path>
-              </svg>
-            </ins>
+                <svg
+                  @click="onCopyClick(CA_BURNED)"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="booger__copy-link"
+                >
+                  <path d="M20,6V17a1,1,0,0,1-1,1H9a1,1,0,0,1-1-1V3A1,1,0,0,1,9,2h7a1.05,1.05,0,0,1,.71.29l3,3A1,1,0,0,1,20,6ZM17,21a1,1,0,0,0-1-1H6V6A1,1,0,0,0,4,6V20a2,2,0,0,0,2,2H16A1,1,0,0,0,17,21Z"></path>
+                </svg>
+              </ins>
+            </aside>
           </li>
           <li class="booger__data-box-item">
             <dfn class="booger__data-header">Address:</dfn>
