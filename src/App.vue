@@ -36,9 +36,9 @@ const onCopyClick = async (address) => {
           <p class="booger__par">Nice to meet.</p>
           <p class="booger__par">My name is <b class="booger__name">DruD</b>.</p>
           <p class="booger__par">And I am a <b class="booger__booger">Booger</b>.</p>
-          <p class="booger__par">Simple meme coin, created on
+          <h1 class="booger__par">Simple meme coin, created on
             <AlgorandLogo />
-          </p>
+          </h1>
         </blockquote>
         <ul class="booger__data-box">
           <li class="booger__data-box-item">
